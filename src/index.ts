@@ -29,3 +29,18 @@ console.log(reminderDatabase.getAllReminders());
 
 console.log(reminderDatabase.updateReminder(id2, "Shopping", "Buy groceries", new Date().toISOString()));
 // false (id2 was removed earlier)
+
+//marking 1st reminder completed
+reminderDatabase.markedAsCompleted(id1);
+
+//marking 1st reminder incompleted
+reminderDatabase.markAsIncompleted(id3);
+
+//getting all reminders marked as completed
+reminderDatabase.getCompletedReminders();
+
+//getting all reminders marked as incompleted
+reminderDatabase.getIncompletedReminders(); 
+
+//getting all reminders due by today
+reminderDatabase.getAllRemindersDueByToday();
