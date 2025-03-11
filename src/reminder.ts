@@ -61,6 +61,7 @@ class ReminderDatabase {
         existingReminder.isCompleted = true;
         this.reminders.set(id, existingReminder);
         console.log('\nReminder marked as completed\n');
+        console.log(existingReminder);
     }
 
     //mark reminder as incompleted
@@ -73,6 +74,7 @@ class ReminderDatabase {
         existingReminder.isCompleted = false;
         this.reminders.set(id, existingReminder);
         console.log('\nReminder marked as incompleted\n');
+        console.log(existingReminder);
     }
 
     //get all reminders marked as completed

@@ -21,7 +21,7 @@ console.log(reminderDatabase.removeReminder(id2));
 console.log(reminderDatabase.getAllReminders());
 // Only contains the remaining reminders
 
-console.log(reminderDatabase.updateReminder(id1, "Meeting", "Discuss the project", new Date().toISOString()));
+console.log(reminderDatabase.updateReminder(id1, "Meeting", "Present the project", new Date().toISOString()));
 // true
 
 console.log(reminderDatabase.getAllReminders());
@@ -33,7 +33,7 @@ console.log(reminderDatabase.updateReminder(id2, "Shopping", "Buy groceries", ne
 //marking 1st reminder completed
 reminderDatabase.markedAsCompleted(id1);
 
-//marking 1st reminder incompleted
+//marking 3st reminder incompleted
 reminderDatabase.markAsIncompleted(id3);
 
 //getting all reminders marked as completed
